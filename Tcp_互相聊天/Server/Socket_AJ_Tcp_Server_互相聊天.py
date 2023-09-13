@@ -4,7 +4,7 @@ import socket            # 匯入雙方 ip、port 溝通 專用 函式庫
 ip = "127.0.0.1"         # 在任何地方，都能用自己的電腦跑，特殊 ip 位址
 # ip = "192.168.95.25"   # 自己電腦當 Server時，要輸入自己當下的 ip
 
-port = 2500             # 設定雙方連線的 port，客戶、伺服器端 要一樣，最大數值可以到好幾萬
+port = 9456             # 設定雙方連線的 port，客戶、伺服器端 要一樣，最大數值可以到好幾萬
 
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
